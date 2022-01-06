@@ -1,17 +1,23 @@
-<x-guest-layout>
-    <x-auth-card>
+@extends('layouts.main')
+@section('title')
+    {{ __('Maak een medewerker:') }}
+@endsection
+
+@section('content')
+    <x-auth-card-app>
         <x-slot name="logo">
             <a href="/">
                 <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
             </a>
         </x-slot>
-
+        <!-- Session Status -->
+        <x-auth-session-status class="mb-4" :status="session('status')" />
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('employee.store') }}">
             @csrf
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 <div>
                     <!-- Name -->
                     <div>
@@ -36,16 +42,8 @@
                                         name="password"
                                         required autocomplete="new-password" />
                     </div>
-
-                    <!-- Confirm Password -->
-                    <div class="mt-4">
-                        <x-label for="password_confirmation" :value="__('Bevestig wachtwoord *')" />
-
-                        <x-input id="password_confirmation" class="block mt-1 w-full"
-                                        type="password"
-                                        name="password_confirmation" required />
-                    </div>
                 </div>
+
                 <div>
                     <!-- FirstName -->
                     <div>
@@ -67,9 +65,31 @@
 
                         <x-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required autofocus />
                     </div>
+                </div>
 
-                    <!-- addres -->
+                <div>
+                    <div class=">
+                        <x-label for="personal_email" :value="__('Persoonlijke email')" />
+
+                        <x-input id="personal_email" class="block mt-1 w-full" type="text" name="personal_email" :value="old('personal_email')" required autofocus />
+                    </div>
+
                     <div class="mt-4">
+                        <x-label for="burger_service_nummer" :value="__('Burger Service Nummer')" />
+
+                        <x-input id="burger_service_nummer" class="block mt-1 w-full" type="text" name="burger_service_nummer" :value="old('burger_service_nummer')" required autofocus />
+                    </div>
+
+                    <div class="mt-4">
+                        <x-label for="birth_date" :value="__('Geboortedatum')" />
+
+                        <x-input id="birth_date" class="block mt-1 w-full" type="date" name="birth_date" :value="old('birth_date')" required autofocus />
+                    </div>
+                </div>
+
+                <div>
+                    <!-- addres -->
+                    <div class="">
                         <x-label for="address" :value="__('Adres (straat en huisnr) *')" />
 
                         <x-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required autofocus />
@@ -90,16 +110,18 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-2">
+                <select class="form-control" name="roles[]" multiple="">
+                    @foreach($roles as $role)
+                        <option value="{{ $role->id }}">{{ $role->name }}</option>
+                    @endforeach
+                </select>
+            </div>
             <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
+                <x-button class="ml-3">
+                    {{ __('Bewaar') }}
                 </x-button>
             </div>
         </form>
-        <div class="text-sm text-gray-400">Invoer gemarkeerd met een * is verplicht</div>
-    </x-auth-card>
-</x-guest-layout>
+    </x-auth-card-app>
+@endsection
