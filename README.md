@@ -6,7 +6,7 @@
 Het project is onderdeel van de opliedig software developer. In dit project kun je aantonen dat je de voorgaande modules onder controle hebt. 
 
 ## Opnieuw pizza's
-De context van het project is opnieuw een pizzaleverancier. Jouw klant is een pizzatent die online pizza verkoopt, op een locatie bereidt en ze daarna via een koerier thuis aflevert. De klant heet "Mario's Pizza Reboot"
+De context van het project is opnieuw een pizzaleverancier. Jouw klant is een pizzatent die online pizza verkoopt, op een locatie bereidt en ze daarna via een koerier thuis aflevert. De klant heet "Stonks Pizza"
 Ze hadden het bedrijf "The Shabby Mess Makers(SMM)" de opdracht gegeven om een applicatie en website te maken. Helaas heeft SMM zich met een grote som geld uit de voeten gemaakt zonder iets te leveren. Dus het aan jullie om er nog iets van te maken. 
 Ze gaan over 5 weken open en dus zal er snel iets geleverd moeten worden.
 
@@ -34,6 +34,7 @@ Natuurlijk moet je nog wat commando's en gebruiken om de boel aan de gang te kri
 - rename .env.examnple naar .env
 - maak database project4 en maak juiste instellingen in .env
 - maak laravel key aan met commando: php artisan key:generate
+- run php artisan migrate --seed
 
 ## License
 Dit project is gemaakt met het framework laravel.
