@@ -1,66 +1,29 @@
 <p align="center"><img src="https://www.summacollege.nl/images/default-source/default-album/logo.png?sfvrsn=17f34f85_6/" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## Project 4
+### Summa College opleiding Software Development
+Het project is onderdeel van de opliedig software developer. In dit project kun je aantonen dat je de voorgaande modules onder controle hebt. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Opnieuw pizza's
+De context van het project is opnieuw een pizzaleverancier. Jouw klant is een pizzatent die online pizza verkoopt, op een locatie bereidt en ze daarna via een koerier thuis aflevert. De klant heet "Mario's Pizza Reboot"
+Ze hadden het bedrijf "The Shabby Mess Makers(SMM)" de opdracht gegeven om een applicatie en website te maken. Helaas heeft SMM zich met een grote som geld uit de voeten gemaakt zonder iets te leveren. Dus het aan jullie om er nog iets van te maken. 
+Ze gaan over 5 weken open en dus zal er snel iets geleverd moeten worden.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Wat is er
+Er zijn een groot aantal user stories die je kunt verdelen over je product team. Jouw leidinggevende wil dat je zowel bezig bent met web als met applicatie(C#) onderdelen. Dus het is niet de bedoeling dat 1 persoon de website maakt en 1 persoon de applicatie.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Opzet
+1. Bekijk alles wat je hebt (dag 1)
+2. Zorg voor een goede ontwikkelomgeving en beschrijf die in een document (dag 1).
+3. Zorg voor een goede testomgeving enb beschrijf die in een document (dag 1).
+4. Zorg voor een goede projectomgeving (dag 1).
+5. Maak een werkverdeling van de taken voor alle projectleden (dag 1).
+6. Maak een gedetailleerde planning voor de eerste week en zorg er voor dat je al user stories af krijgt (dag 1).
+7. Zorg er voor dat jouw werk in een eigen github repo terecht komt (week 1).
 
 ## License
 
+Dit project is gemaakt met het framework laravel.
+Het project wordt vrijgegeven onder MIT licentie.
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
