@@ -81,9 +81,10 @@ class EmployeeController extends Controller
         // dd($request->roles);
         foreach ($request->roles as $role_id) {
             $role = new UserRole();
-            $role->user_id = $user->id;
-            $role->role_id = $role_id;
-            $role->save();
+            // $role->user_id = $user->id;
+            // $role->role_id = $role_id;
+            // $role->save();
+            $user->roles()->attach($role_id);
         }
 
         return redirect()->route('employee.index');

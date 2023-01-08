@@ -15,11 +15,12 @@ class Role extends Model
 
     // ************************************************************************
     // DUJO
-    // 17-12-2021
-    // added this to get the role's users (from the pivot table)
+    // 21-12-2022
+    // role belongs to many users
     public function users()
     {
-        return $this->belongsTo(User::class, 'user_roles', 'role_id', 'user_id');
+        // secend param for table name (standard is user_role)
+        return $this->belongsToMany(User::class, 'user_roles');
     }
     // ************************************************************************
 }

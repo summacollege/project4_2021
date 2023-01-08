@@ -47,15 +47,16 @@ class User extends Authenticatable
     // DUJO
     // 17-12-2021
     // added this to get the user's role (from the pivot table)
+    // users can have multiple roles (so user belongs to many roles)
     public function roles()
     {
-        // tweede parameter geeft de tussentabel (naam)
-        return $this->belongsToMany(Role::class, 'user_roles', 'user_id', 'role_id');
+        // secend param for table name (standard is user_role)
+        return $this->belongsToMany(Role::class, 'user_roles');
     }
     // ************************************************************************
     // ************************************************************************
     // DUJO
-    // 17-12-2021
+    // 21-12-2022
     // check of de user een rol heeft
     public function hasRole(String $role)
     {

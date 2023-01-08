@@ -1,7 +1,7 @@
 <p align="center"><img src="https://www.summacollege.nl/images/default-source/default-album/logo.png?sfvrsn=17f34f85_6/" width="400"></a></p>
 
 
-## Project 4
+## Project 4 (leerjaar 2021)
 ### Summa College opleiding Software Development
 Het project is onderdeel van de opliedig software developer. In dit project kun je aantonen dat je de voorgaande modules onder controle hebt. 
 
@@ -25,13 +25,13 @@ Er zijn een groot aantal user stories die je kunt verdelen over je product team.
 ## Hoe te gebruiken
 Deze repo is een standaard laravel app met breeze. Breeze is de component die gebruikt wordt voor authenticatie. Daarnaast is er een tabel customers en een tabel employees als uitbreiding op de users. De users hebben een rol die weeer is opgenomen in een tabel roles en een tabel user_roles. Alle migrations zijn al aanwezig en er is een seed gemaakt (testdata).
 Je kunt deze repo clonen op je eigen systeem met het commando:
-clone  https://github.com/summacollege/project4.git
+git clone  https://github.com/summacollege/project4.git
 
 Zodra je dat hebt gedaan kun je de .git folder weggooien en je eigen git repo aanmaken (en eigen github repo).
 Natuurlijk moet je nog wat commando's en gebruiken om de boel aan de gang te krijgen en natuurlijk ook je .env weer aanmaken.
 - composer update
 - npm install && npm run dev (of npm run watch)
-- rename .env.examnple naar .env
+- rename .env.example naar .env
 - maak database project4 en maak juiste instellingen in .env
 - maak laravel key aan met commando: php artisan key:generate
 - run php artisan migrate --seed
